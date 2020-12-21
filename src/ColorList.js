@@ -12,9 +12,12 @@ function ColorList({ colors }) {
     
     return (
       <div className="ColorList">
-        <div className="ColorList">
-          <h5>Current Colors</h5>
-          <ul>{colorLinks}</ul>
+        <div>
+          <Link to="/colors/new">Add a color</Link>
+        </div>
+        <div>
+          <h3>Current Colors</h3>
+          <h5>{colorLinks}</h5>
         </div>
       </div>
     );
